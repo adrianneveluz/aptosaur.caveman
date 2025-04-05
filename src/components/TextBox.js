@@ -278,7 +278,7 @@ const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinos
             }, 5000);
 
             setTimeout(() => {
-                setCustomText("There are still a few caveman, give your luck a try, mint some at <a href=https://launchpad.wapal.io/nft/cavemans'>wapal</a>");
+                setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://launchpad.wapal.io/nft/cavemans'>wapal</a>");
             }, 7500);
         }
     };
