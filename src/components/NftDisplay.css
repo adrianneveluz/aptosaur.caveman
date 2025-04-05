@@ -98,6 +98,7 @@
   .nft-card-container {
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
   }
 
   .nft-card {
@@ -113,6 +114,9 @@
   .button-row {
     justify-content: flex-start;
     margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .nav-button {
