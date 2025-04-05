@@ -139,7 +139,7 @@
     flex-direction: row; /* Align buttons in a row for mobile view */
     flex-wrap: wrap; /* Allow buttons to wrap to the next line */
     justify-content: center; /* Center-align the buttons */
-    gap: 10px; /* Add space between the buttons */
+    gap: 7px; /* Add space between the buttons */
   }
 
   .rectangle-button::before {
