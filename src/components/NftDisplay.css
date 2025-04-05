@@ -113,7 +113,7 @@
 
   .button-row {
     justify-content: flex-start;
-    margin-top: 5px;
+    margin-top: 2px;
     position: static;
   }
 
@@ -121,7 +121,7 @@
     display: flex;
     justify-content: flex-start;
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     right: 5px;
     margin: 0; /* Remove top/bottom margin for nav buttons */
   }
