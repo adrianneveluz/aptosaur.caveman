@@ -146,7 +146,7 @@ const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinos
                 setCustomText("Opps you don't seem to own a 1/1 caveman");
 
                 setTimeout(() => {
-                    setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://.com'>wapal</a>");
+                    setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://launchpad.wapal.io/nft/cavemans'>wapal</a>");
                 }, 2500);
             }
         }
