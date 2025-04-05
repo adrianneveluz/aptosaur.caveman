@@ -16,7 +16,14 @@ const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinos
     const collectionId = "0x13049480ae8f39cb21c9a0ee8805f248ed8d12d4d70da29daf324e21a3ffe97b";
 
     // Wrap headValues in useMemo hook
-    const headValues = useMemo(() => ["peker", "alladin", "wapal", "loyal hiker", "mo"], []);
+    const headValues = useMemo(() => [
+    "peker", "alladin", "wapal", "loyal hiker", "mo", "aperson", "aptos news", "atreyu", "baba", "baptman", "barollo",
+    "black rose", "brentchetan", "denoshi", "dr wolon", "fearune", "greg", "hair token", "jc", "julie", "mason", "roo token",
+    "rosta", "loyal travlr", "serene", "shahnobi", "sneezy", "tony", "troopz", "yar hunter", "first pepe", "statue", "the head",
+    "picasso", "warhol", "starry starry night", "wall painting", "king", "lost mad scientist", "blade master", "devil", "bart",
+    "shahman", "cupid", "Agni", "santa", "internet", "caveman rick", "snowman", "easter man", "trippy", "the priest", "the diver",
+    "the oracle", "the skeleton", "the glitch", "yin", "blank canvas", "dr.stone"
+], []);
 
     const fetchPairs = async () => {
         try {
