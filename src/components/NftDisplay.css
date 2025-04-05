@@ -101,8 +101,8 @@
   }
 
   .nft-card {
-    width: 70px; /* Smaller width for mobile view */
-    height: 70px; /* Smaller height for mobile view */
+    width: 100px; /* Smaller width for mobile view */
+    height: 100px; /* Smaller height for mobile view */
     margin: 5px;
   }
 
@@ -116,7 +116,7 @@
   }
 
   .nav-button {
-    padding: 3px 5px; /* Smaller padding for mobile view */
+    padding: 1px 2px; /* Smaller padding for mobile view */
     font-size: 0.6em; /* Smaller font size for mobile view */
   }
 
