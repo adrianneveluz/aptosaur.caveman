@@ -10,6 +10,7 @@
   display: flex;
   justify-content: flex-end; /* Align the display to the right */
   width: 100%; /* Ensure the wrapper takes the full width of the page */
+  
 }
 
 .nft-display {
@@ -17,24 +18,28 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px; /* Reduce margin-top to move up */
+ 
 }
 
 .nft-card-container {
   display: flex;
   justify-content: center;
+ 
+  
 }
 
 .nft-card {
   text-align: center;
   margin: 10px;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   z-index: 10;
   position: relative; /* To position the head value text on top of the image */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px; /* Move the card down a bit */
+  margin-top: 20px; 
+  
 }
 
 .nft-attribute {
