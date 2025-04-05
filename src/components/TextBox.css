@@ -1,0 +1,156 @@
+.text-box.show {
+  display: block;
+}
+
+.clickable {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.text-box {
+  right: 35px;
+  top: 372px;
+  position: absolute;
+  height: 155px; /* Retain the original height */
+  width: 982px; /* Retain the original width */
+  background-image: url('../imgassets/speechbubble.png'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the full area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  color: black;
+  z-index: 5; /* Ensure it is above other elements */
+  display: flex; /* Use flexbox to center content */
+  justify-content: flex-start; /* Align items horizontally to the start */
+  align-items: flex-start; /* Align items vertically to the start */
+  text-align: center; /* Center-align text */
+  animation: none; /* Default to no animation */
+  padding: 20px 20px; /* Add padding to move text down and to the right */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  word-break: break-word; /* Ensure long words break to the next line */
+  overflow: hidden; /* Hide any overflow text */
+  font-family: 'CustomFont', sans-serif; /* Apply the custom font */
+  font-size: 15px;
+  line-height: 2; /* Adjust line height to make the gap between lines smaller */
+}
+
+.text-box.show {
+  animation: zoomBounceTwiceFromBottomLeft 0.8s ease-in-out forwards; /* Apply the combined zoom and bounce animation */
+}
+
+.text-box p {
+  margin: 0;
+  padding: 20px;
+  max-width: 962px; /* Set the maximum width for the paragraph */
+  overflow-wrap: break-word; /* Ensure proper wrapping */
+  word-break: break-word; /* Ensure proper wrapping */
+  white-space: normal; /* Ensure text wraps */
+  text-align: center; /* Center-align text within the paragraph */
+}
+
+.text-box input[type="text"] {
+  width: calc(100% - 40px); /* Full width minus padding */
+  height: calc(100% - 40px); /* Full height minus padding */
+  font-family: 'CustomFont', sans-serif; /* Use the same font as the text box */
+  font-size: 15px; /* Use the same font size as the text box */
+  line-height: 2; /* Use the same line height as the text box */
+  color: black; /* Use the same text color as the text box */
+  background: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
+  padding: 20px; /* Add padding to match the text box */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-wrap: break-word; /* Ensure long words break to the next line */
+  word-break: break-word; /* Ensure long words break to the next line */
+  outline: none; /* Remove the default outline */
+}
+
+.text-box input[type="text"]::placeholder {
+  color: black; /* Use the same text color as the text box for the placeholder */
+  opacity: 0.5; /* Make the placeholder text slightly transparent */
+}
+
+.text-box input[type="text"]:focus {
+  outline: none; /* Remove the default outline when the input field is focused */
+}
+
+.special-request-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-request-container input {
+  width: 80%; /* Adjust width as needed */
+  margin-bottom: 10px; /* Space between input and button */
+}
+
+.special-request-container button {
+  font-family: 'CustomFont', sans-serif;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .text-box {
+    width: 50vw; /* Adjust the width for mobile view */
+    height: auto; /* Adjust the height for mobile view */
+    top: 100%; /* Positioning for mobile view */
+    right: auto; /* Positioning for mobile view */
+    left: 32%; /* Center horizontally */
+    transform: translateX(10%); /* Center horizontally */
+    padding: 1vh 1vw; /* Adjust padding for mobile view */
+    font-size: 10px;
+    background-image: url('../imgassets/speechbubble_mobile.png'); /* Set the new background image for mobile view */
+    background-size: 100% 100%; /* Make the background image stretch to fit */
+  }
+
+  .text-box p {
+    max-width: 100%; /* Adjust the maximum width for mobile view */
+    padding: 1vh; /* Adjust padding for mobile view */
+  }
+
+  .text-box input[type="text"] {
+    width: calc(100% - 2vw); /* Adjust width minus padding for mobile view */
+    height: auto; /* Adjust height for mobile view */
+    padding: 1vh; /* Adjust padding for mobile view */
+  }
+
+  .special-request-container {
+    padding: 1vh; /* Adjust padding for mobile view */
+  }
+
+  .special-request-container input {
+    width: 100%; /* Full width for mobile view */
+  }
+
+  .special-request-container button {
+    width: 100%; /* Full width for mobile view */
+    margin-top: 1vh; /* Space above the button */
+  }
+
+  .button-row {
+    display: flex;
+    flex-direction: row; /* Align buttons in a row for mobile view */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: center; /* Center-align the buttons */
+    gap: 10px; /* Add space between the buttons */
+  }
+
+  .rectangle-button::before {
+    content: attr(data-text); /* Use the data-text attribute to display the text */
+    position: absolute;
+    top: 5px; /* Adjust this value to position the text as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 8px; /* Adjust the font size as needed */
+    text-shadow: 1px 1px 2px black; /* Add text shadow for better readability */
+    
+  }
+}

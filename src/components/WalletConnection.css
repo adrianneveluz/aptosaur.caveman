@@ -1,0 +1,74 @@
+/* Define the custom font using @font-face */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../font/Daydream.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.connect-image, .disconnect-image {
+    position: absolute;
+    width: 226px; /* Set a width for the image */
+    height: 129px; /* Set a height for the image */
+    background: no-repeat center center;
+    background-size: contain; /* Ensure the image is fully visible within the container */
+}
+
+.connect-image {
+    background-image: url('../imgassets/connectbutton.gif');
+    transform: translate(5%, -50%);
+}
+
+.disconnect-image {
+    background-image: url('../imgassets/disconnectbutton.gif');
+    transform: translate(25%, -50%);
+}
+
+.button-box {
+    transform: translate(50%, -50%);
+    cursor: pointer;
+    opacity: 0;
+}
+
+.disconnect {
+    opacity: 0;
+    cursor: pointer;
+    width: 170px;
+    height: 100px;
+}
+
+.hidden {
+    display: none; /* Hide the element */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .connect-wallet-button {
+        font-size: 10px;
+        
+    }
+
+    .disconnect {
+        padding: 10px 10px; /* Adjust padding for mobile view */
+        font-size: 10px; /* Adjust font size for mobile view */
+        margin-left: -100px; /* Adjust margin for mobile view */
+    }
+
+    .button-box {
+        position:relative;
+        padding: 5px 10px; /* Adjust padding for mobile view */
+        font-size: 10px; /* Adjust font size for mobile view */
+        left:-80px;
+        
+    }
+
+    .button-box.connected {
+        top: -30px; /* Adjust top position for mobile view */
+        right: -50px; /* Adjust right position for mobile view */
+    }
+
+    .connect-image, .disconnect-image {
+        width: 113px; /* Scale down width for mobile view */
+        height: 64.5px; /* Scale down height for mobile view */
+    }
+}

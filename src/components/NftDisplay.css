@@ -1,0 +1,112 @@
+/* Define the custom font using @font-face */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../font/Daydream.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nft-display-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Align the display to the right */
+  width: 100%; /* Ensure the wrapper takes the full width of the page */
+}
+
+.nft-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Reduce margin-top to move up */
+}
+
+.nft-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nft-card {
+  text-align: center;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  position: relative; /* To position the head value text on top of the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Move the card down a bit */
+}
+
+.nft-attribute {
+  font-size: 1.2em;
+  font-family: 'CustomFont', sans-serif;
+  margin: 0; /* Remove margin to reduce gap */
+  text-align: center;
+}
+
+.nft-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire NFT card */
+  margin: 0; /* Remove margin to reduce gap */
+  padding: 0; /* Remove padding to reduce gap */
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px; /* Move the buttons up closer to the image */
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #ccc; /* Example background color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 0 5px; /* Add margin between buttons */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.nav-button:hover {
+  background-color: #aaa; /* Darker background color on hover */
+}
+
+.button-icon {
+  width: 60px; /* Adjust the size as needed */
+  height: 60px; /* Adjust the size as needed */
+  image-rendering: pixelated; /* Ensure the image is not blurred */
+  margin-top: 0; /* Remove margin-top to reduce gap */
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+  .nft-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nft-attribute {
+    font-size: 1em;
+  }
+
+  .nav-button {
+    padding: 5px 10px;
+  }
+
+  .button-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nft-display-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Align the display to the right */
+    width: 100%;
+    height: 470px;
+  }
+}

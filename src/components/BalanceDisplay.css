@@ -1,0 +1,23 @@
+/* src/components/BalanceDisplay.css */
+
+.balance-display {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+.balance-box {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
