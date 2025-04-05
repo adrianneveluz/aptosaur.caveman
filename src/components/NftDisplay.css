@@ -10,7 +10,6 @@
   display: flex;
   justify-content: flex-end; /* Align the display to the right */
   width: 100%; /* Ensure the wrapper takes the full width of the page */
-  
 }
 
 .nft-display {
@@ -18,28 +17,24 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px; /* Reduce margin-top to move up */
- 
 }
 
 .nft-card-container {
   display: flex;
   justify-content: center;
- 
-  
 }
 
 .nft-card {
   text-align: center;
   margin: 10px;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   z-index: 10;
   position: relative; /* To position the head value text on top of the image */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px; 
-  
+  margin-top: 20px;
 }
 
 .nft-attribute {
@@ -90,28 +85,43 @@
 
 /* Media queries for mobile responsiveness */
 @media (max-width: 600px) {
+  .nft-display-wrapper {
+    justify-content: flex-start; /* Align the display to the left */
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+  .nft-card-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .nft-card {
-    width: 200px;
-    height: 200px;
+    width: 50px; /* Smaller width for mobile view */
+    height: 50px; /* Smaller height for mobile view */
+    margin: 5px;
   }
 
   .nft-attribute {
-    font-size: 1em;
+    font-size: 0.6em; /* Smaller font size for mobile view */
+  }
+
+  .button-row {
+    justify-content: flex-start;
+    margin-top: 5px;
   }
 
   .nav-button {
-    padding: 5px 10px;
+    padding: 3px 5px; /* Smaller padding for mobile view */
+    font-size: 0.6em; /* Smaller font size for mobile view */
   }
 
   .button-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .nft-display-wrapper {
-    display: flex;
-    justify-content: flex-start; /* Align the display to the right */
-    width: 100%;
-    height: 470px;
+    width: 20px; /* Smaller width for mobile view */
+    height: 20px; /* Smaller height for mobile view */
   }
 }
