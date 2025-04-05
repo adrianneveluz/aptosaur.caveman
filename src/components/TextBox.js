@@ -146,7 +146,7 @@ const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinos
                 setCustomText("Opps you don't seem to own a 1/1 caveman");
 
                 setTimeout(() => {
-                    setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://wapal.com'>wapal</a>");
+                    setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://.com'>wapal</a>");
                 }, 2500);
             }
         }
@@ -270,7 +270,7 @@ const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinos
             setCustomText("Opps you don't seem to own a 1/1 caveman");
 
             setTimeout(() => {
-                setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://wapal.com'>wapal</a>");
+                setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://launchpad.wapal.io/nft/cavemans'>wapal</a>");
             }, 2500);
 
             setTimeout(() => {
@@ -278,7 +278,7 @@ const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinos
             }, 5000);
 
             setTimeout(() => {
-                setCustomText("There are still a few caveman, give your luck a try, mint some at <a href='https://wapal.com'>wapal</a>");
+                setCustomText("There are still a few caveman, give your luck a try, mint some at <a href=https://launchpad.wapal.io/nft/cavemans'>wapal</a>");
             }, 7500);
         }
     };
