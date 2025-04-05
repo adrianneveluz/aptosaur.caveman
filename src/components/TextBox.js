@@ -4,7 +4,7 @@ import { doc, getDoc, setDoc, query, where, getDocs, collection } from "firebase
 import { db } from '../firebase/firebase-config';
 import { request } from 'graphql-request';
 import './TextBox.css';
-import { getDoc, query, where } from 'firebase/firestore';
+//import { getDoc, query, where } from 'firebase/firestore';
 
 const TextBox = ({ walletConnectionRef, customText, setCustomText, selectedDinosaur, setSelectedDinosaur, currentHeadAttribute, setCurrentHeadAttribute }) => {
     const [nfts, setNfts] = useState([]);
