@@ -114,9 +114,15 @@
   .button-row {
     justify-content: flex-start;
     margin-top: 5px;
+    position: static;
+  }
+
+  .nav-button-row {
+    display: flex;
+    justify-content: flex-start;
     position: absolute;
-    bottom: 0;
-    right: 30px;
+    bottom: 5px;
+    right: 5px;
   }
 
   .nav-button {
